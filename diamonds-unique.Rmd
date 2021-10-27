@@ -1,0 +1,11 @@
+---
+title: "Unique diamond combinations"
+output: html_document
+---
+
+```{r echo = FALSE, results = 'asis'}
+library(knitr)
+library(ggplot2)
+unique_diamond_combinations <- unique(diamonds[,c('cut', 'color', 'clarity')])
+kable(unique_diamond_combinations, caption = "Diamonds")
+```
